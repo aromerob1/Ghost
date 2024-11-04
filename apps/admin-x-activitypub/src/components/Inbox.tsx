@@ -11,7 +11,7 @@ import {useActivitiesForUser} from '../hooks/useActivityPubQueries';
 
 interface InboxProps {}
 
-const Inbox: React.FC<InboxProps> = ({}) => {
+const Inbox: React.FC<InboxProps> = () => {
     const [, setArticleContent] = useState<ObjectProperties | null>(null);
     const [, setArticleActor] = useState<ActorProperties | null>(null);
     const [layout, setLayout] = useState('inbox');
