@@ -24,7 +24,7 @@ test.describe('ListIndex', async () => {
 
         // following list
         const followingUser = await page.locator('[data-test-following] > li').textContent();
-        await expect(followingUser).toEqual('@index@main.ghost.org');
+        expect(followingUser).toEqual('@index@main.ghost.org');
         const followingCount = await page.locator('[data-test-following-count]').textContent();
         await expect(followingCount).toEqual('1');
 
