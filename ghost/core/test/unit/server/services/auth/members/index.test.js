@@ -54,7 +54,7 @@ describe('Auth Service - Members', function () {
                     rumpel: 'stiltskin'
                 };
                 const token = jwt.sign(claims, null, {
-                    algorithm: 'none'
+                    algorithm: 'HS256'
                 });
                 const req = {
                     get() {
